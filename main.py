@@ -3,7 +3,7 @@ import random
 
 GAME_WIDTH = 700
 GAME_HEIGHT = 700
-SPEED = 50
+SPEED = 90
 SPACE_SIZE = 50
 BODY_PARTS = 3
 SNAKE_COLOR = "#00FF00"
@@ -34,6 +34,7 @@ class Food:
 
 
 def next_turn(snake, food):
+    
     x, y = snake.coordinates[0]
 
     if direction == "up":
